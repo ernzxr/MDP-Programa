@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTN: MDP Programa</title>
+  </head>
+
+  <body>
+
+    <article style="margin: auto; width: 24em; background-color: whitesmoke; padding: 1em 2em; display: flex; flex-direction: column; align-items: center;">
+      <h1>Inscripción UTN: MDP Programa</h1>
+
+      <form action="#" method="post" style="display: flex; flex-direction: column; gap: 0.5em; width: 20em">
+        <label for="name">Nombre</label>
+        <input name="name" id="name" type="text" required>
+
+        <label for="lastname">Apellido</label>
+        <input name="lastname" id="lastname" type="text" required>
+
+        <label for="email">Email</label>
+        <input name="email" id="email" type="email" required>
+
+        <label for="location">País</label>
+        <select name="location" id="location" required>
+          <option value="" disabled selected>Selecciona una opción..</option>
+          <option value="argentina">Argentina</option>
+          <option value="uruguay">Uruguay</option>
+          <option value="mexico">Mexico</option>
+        </select>
+
+        <div style="margin: 0.5em 0; align-self: center; gap: 430px;">
+          <label for="working">¿Trabaja actualmente?</label>
+          <div style="display: flex; justify-content: space-evenly; margin-top: 0.5em;" >
+            <div><input type="radio" id="yes_working" value="yes" name="working" required><label for="yes_working">Si</label></div>
+            <div><input type="radio" id="no_working" value="no" name="working"><label for="no_working">No</label></div>
+          </div>
+        </div>
+
+        <div style="display: columns; align-self: center;">
+          <div style="display: flex; font-size: 13px;">
+            <input type="checkbox" id="newsletter" name="newsletter" value="accepted">
+            <label style="align-self: center;" for="newsletter">Quiero recibir mails con ofertas acádemicas.</label>
+          </div>
+
+          <div style="display: flex; font-size: 13px;">
+            <input type="checkbox" id="terms" name="terms" value="accepted" required>
+            <label style="align-self: center;" for="terms">Acepto los términos y condiciones.</label>
+          </div>
+        </div>
+
+        <button style="margin-top: 0.5em; align-self: center; width: 4em;" type="submit">Enviar</button>
+      </form>
+    </article>
+
+  </body>
+</html>
