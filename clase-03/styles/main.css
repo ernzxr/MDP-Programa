@@ -1,0 +1,46 @@
+.header, main, .skills, footer {
+    padding: 2em;
+}
+
+.header, .header header, .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    max-width: 44em;
+    margin: auto;
+}
+
+.header img {
+    border-radius: 50%;
+}
+
+main, main section, main section header, footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(20, 16, 24);
+    max-width: 44em;
+    margin: auto;
+}
+
+main section header p {
+    max-width: 36em;
+}
+
+.software {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+    max-width: 24em;
+}
+
+.software a {
+    text-align: center;
+}
+
+.soft-skills {
+    text-align: center;
+}
