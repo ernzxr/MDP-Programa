@@ -15,6 +15,7 @@
       href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/fontello.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,16 +25,16 @@
   </head>
   <body style="background-color: whitesmoke">
     <header>
-      <div>
-        <img src="./src/menu/logo.png" alt="Safe Food" />
-        <nav>
-          <ul>
-            <li><a class="medium active" href="#">Inicio</a></li>
-            <li><a class="medium" href="#">Nosotros</a></li>
-            <li><a class="medium" href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="header-container">
+          <img src="./src/menu/logo.png" alt="Safe Food" />
+          <nav>
+            <ul>
+              <li><a class="medium active" href="#">Inicio</a></li>
+              <li><a class="medium" href="#">Nosotros</a></li>
+              <li><a class="medium" href="#">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
     </header>
     <main>
       <section class="menu-list">
@@ -120,7 +121,9 @@
           />
           <h2 class="medium">Chupe de Centolla</h2>
           <p>
-            El chupe de centolla magallánica es un plato exquisito, elaborado con un producto de excelencia, marca distintiva de la cocina patagónica chilena.
+            El chupe de centolla magallánica es un plato exquisito, elaborado
+            con un producto de excelencia, marca distintiva de la cocina
+            patagónica chilena.
           </p>
         </div>
         <div class="menu-item">
@@ -131,7 +134,8 @@
           />
           <h2 class="medium">Roast Beef</h2>
           <p>
-            Que sería de nuestra cocina si no contaramos con nuestro tradicional rost beef bien argentino, elaborado con los mejores cortes. 
+            Que sería de nuestra cocina si no contaramos con nuestro tradicional
+            rost beef bien argentino, elaborado con los mejores cortes.
           </p>
         </div>
         <div class="menu-item">
@@ -142,16 +146,28 @@
           />
           <h2 class="medium">Flan Especial</h2>
           <p>
-            Ganador de múltiples premios y considerado uno de los mejores flanes de la región, no te podes ir si haberlo probado!
+            Ganador de múltiples premios y considerado uno de los mejores flanes
+            de la región, no te podes ir si haberlo probado!
           </p>
         </div>
       </section>
     </main>
     <footer>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <div class="footer-container">
+        <img class="footer-logo" src="./src/menu/logo.png" alt="Safe Food" />
+        <div class="footer-rrss">
+          <a class="icon-facebook" href="https://facebook.com" target="_blank"
+            >@safefood</a
+          >
+          <a class="icon-instagram" href="https://instagram.com" target="_blank"
+            >@safefoodmdp</a
+          >
+        </div>
+        <div class="footer-location">
+          <p>Safe Food</p>
+          <p>+223 555-5555</p>
+          <p>Rivadavia 5555, Mar del Plata, 7600, ARG</p>
+        </div>
       </div>
     </footer>
   </body>

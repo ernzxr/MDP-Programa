@@ -9,6 +9,28 @@ h1 {
     text-align: right;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
 /* variables */
 
 :root {
@@ -33,14 +55,15 @@ h1 {
 
 header {
     background-image: url(../src/menu/header-background.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 300px;
     display: flex;
     justify-content: center;
+    
 }
 
-header div {
+.header-container {
     padding: 1em 0;
     width: 700px;
     display: flex;
@@ -66,15 +89,13 @@ nav ul li {
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
     padding: 0.5em;
     border-bottom: 1px solid transparent;
     transition: border 0.3s ease-in-out;
 }
 
 nav li:not(.active):hover a {
-    transition: all 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
     border-bottom: 1px solid white;
 }
 
@@ -162,8 +183,43 @@ footer {
     justify-content: center;
 }
 
-footer div {
+.footer-container {
     width: 700px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1em 0;
+    gap: 1.5em;
+}
+
+.footer-rrss {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-rrss a {
+    color: black;
+    padding: 0 0.5em;
+    transition: color 0.2s ease-out;
+}
+
+.footer-rrss a:hover {
+    color: rgb(62, 121, 51);
+    transition: all 0.2s ease-in;
+}
+
+.footer-logo {
+    width: 150px;
+}
+
+.footer-location {
+    display: flex;
+}
+
+.footer-location p {
+    padding: 0 1em;
+}
+
+.footer-location p:not(:last-child) {
+    border-right: 1px solid black;
 }
