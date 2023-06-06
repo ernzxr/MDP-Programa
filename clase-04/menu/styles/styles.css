@@ -1,0 +1,169 @@
+/* general */
+
+* {
+    font-family: Kanit, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: right;
+}
+
+/* variables */
+
+:root {
+    --font-bold: 700;
+    --font-medium: 500;
+    --font-regular: 400; 
+}
+
+.bold {
+    font-weight: var(--font-bold);
+}
+
+.regular {
+    font-weight: var(--font-regular);
+}
+
+.medium {
+    font-weight: var(--font-medium);
+}
+
+/* header */
+
+header {
+    background-image: url(../src/menu/header-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+header div {
+    padding: 1em 0;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 75px;
+}
+
+nav {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0.5em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s ease-in-out;
+}
+
+nav li:not(.active):hover a {
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid white;
+}
+
+.active {
+    border-bottom: 1px solid white;
+}
+
+/* main */
+
+main {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.menu-list h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5em;
+}
+
+.menu-list {
+    border-right: 1px solid black;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 45%
+}
+
+.menu-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.menu-list li {
+
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+/* aside */
+
+.aside {
+    padding: 1em;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.menu-item {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    box-shadow: 1px 1px 4px -1px black;
+}
+
+.menu-item h2 {
+    font-size: 1.3em;
+}
+
+.menu-item p {
+    font-size: 0.9em;
+}
+
+.menu-img-item {
+    border-radius: 1em 1em 1em 4em;
+    align-self: flex-end;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+}
+
+footer div {
+    width: 700px;
+    display: flex;
+    padding: 1em 0;
+}
