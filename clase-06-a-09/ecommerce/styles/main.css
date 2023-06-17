@@ -1,0 +1,618 @@
+/* general */
+
+* {
+    font-family: Kanit, Helvetica, Arial, sans-serif;
+}
+
+/* buttons */
+
+button {
+    color: white;
+    border: 1px white solid;
+    padding: 0.7em 2em;
+    border-radius: 4px;
+}
+
+.read-more:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 100);
+}
+
+.shop-now:hover,
+.view-all:hover {
+    color: black;
+    background-color: rgb(187, 185, 50);  
+}
+
+.shop-now, 
+.view-all {
+    background-color: #B7472C;
+    border: 1px #B7472C;
+    transition: all ease-in-out 0.2s;
+}
+
+.read-more {
+    background-color: transparent;
+    transition: all ease-in-out 0.2s;
+}
+
+/* header top */
+
+.header-top-container {
+    background-color: #B7472C;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.header-icon-phone-container {
+    display: flex;
+    gap: 0.2em;
+}
+
+.header-icon-mail-container {
+    display: flex;
+    gap: 0.35em;
+}
+
+.header-icon-instagram-container a {
+    display: flex;
+    gap: 2px;
+}
+
+.header-icon-facebook-container a {
+    display: flex;
+}
+
+.header-icon-facebook-container p {
+    position: relative;
+    top: -1px;
+}
+
+.header-icon-instagram-container p {
+    position: relative;
+    top: -1px;
+}
+
+.header-top-width {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+/* header nav and call to action*/
+
+.header-background {
+    height: 400px;
+    background-image: url(../src/header/header-background.JPG);
+    background-repeat: no-repeat;
+    background-size: 1920px 1000px;
+    background-position: center -170px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.header-top-contact,
+.header-rrss {
+    display: flex;
+    gap: 0.4em;
+    font-size: 0.9em;
+    align-items: center;
+}
+
+.header-rrss a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-nav-and-cta-container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-nav-container {
+    width: 800px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+.header-nav-container ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-container ul li a {
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.header-nav-container ul li:not(:first-child) {
+    border-left: 1px white solid;
+}
+
+.header-nav-container ul li:hover a {
+    font-size: 1em;
+    transition: all .2s ease-in-out;
+}
+
+.header-nav-container ul li a {
+    padding: 0.8em;
+    font-size: 0.8em;
+}
+
+.header-call-to-action-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 11em;
+    margin-bottom: 3em;
+}
+
+.call-to-action-container {
+    transform: rotate(-4deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.call-to-action-container img {
+    width: 140px;
+}
+
+/* main services */
+
+.services-container {
+    color: white;
+    background-color: #B7472C;
+    display: flex;
+    justify-content: center;
+}
+
+.services-container-width {
+    width: 800px;
+    height: 160px;
+    display: flex;
+}
+
+.services-container article {
+    width: calc(800px/3);
+    height: 100%;
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+}
+
+.services-container article section {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-container article h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+}
+
+.services-container article p {
+    font-size: 0.7em;
+    line-height: 22px;
+}
+
+.edgar-allan {
+    background-image: url(../src/services/character-1.png);
+    width: 163px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -20px -10px;
+}
+
+.ruby {
+    background-image: url(../src/services/character-2.png);
+    width: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -14px 0;
+}
+
+.sexy-ladie {
+    background-image: url(../src/services/character-3.png);
+    width: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -26px -10px;
+}
+
+.customer-support {
+    background-color: #B7472C;
+}
+
+.shipping {
+    background-color: #b13c1e;
+}
+
+.money-back {
+    background-color: #aa381b;
+}
+
+/* main cannabis genetics */
+
+.cannabis-genetics-container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 0.5em;
+    padding: 1em;
+}
+
+.cannabis-genetics-container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cannabis-genetics-container img {
+    border-radius: 100%;
+    border: #B7472C 1px solid;
+    width: 125px;
+    height: 125px;
+    padding: 0.4em;
+}
+
+.kush {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: #B7472C 1px solid;
+}
+
+.kush-img {
+    width: 115px;
+    height: 115px;
+    background-image: url(../src/genetics/genetic.jpeg);
+    background-size: 360px;
+    background-position: -5px -35px;
+    border-radius: 100%;
+}
+
+.haze {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: #B7472C 1px solid;
+}
+
+.haze-img {
+    width: 115px;
+    height: 115px;
+    background-image: url(../src/genetics/genetic.jpeg);
+    background-size: 360px;
+    background-position: -120px -35px;
+    border-radius: 100%;
+}
+
+.skunk {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: #B7472C 1px solid;
+}
+
+.skunk-img {
+    width: 115px;
+    height: 115px;
+    background-image: url(../src/genetics/genetic.jpeg);
+    background-size: 360px;
+    background-position: -230px -35px;
+    border-radius: 100%;
+}
+
+.widow {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: #B7472C 1px solid;
+}
+
+.widow-img {
+    width: 115px;
+    height: 115px;
+    background-image: url(../src/genetics/genetic.jpeg);
+    background-size: 360px;
+    background-position: -5px -150px;
+    border-radius: 100%;
+}
+
+.cripy {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: #B7472C 1px solid;
+}
+
+.cripy-img {
+    width: 115px;
+    height: 115px;
+    background-image: url(../src/genetics/genetic.jpeg);
+    background-size: 360px;
+    background-position: -120px -148px;
+    border-radius: 100%;
+}
+
+.cannabis-genetics-container h3 {
+    text-align: center;
+    padding: 0.4em;
+}
+
+/* shop list */
+
+.shop-list-container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    gap: 1.5em;
+}
+
+.header-shop-list-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-shop-list-container h1 {
+    font-size: 1.5em;
+}
+
+.header-shop-list-container i {
+    color: #B7472C;
+}
+
+.items-list-container {
+    display: flex;
+    gap: 1em;
+}
+
+.items-list-container article {
+    width: calc(800px/4);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+.item-list-image-container {
+    width: 184px;
+    height: 280px;
+    box-shadow: black 1px 1px 4px -1px;
+}
+
+.items-list-container img {
+    object-fit: contain;
+}
+
+.lighter-fix {
+    transform: scale(0.7);
+}
+
+.blunt-fix {
+    transform: scale(0.95);
+}
+
+.items-list-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.items-list-container article h3 {
+    font-size: 1.2em;
+}
+
+.items-list-container i {
+    font-size: 0.9em;
+    color: #b13c1e;
+}
+
+.items-list-container article div {
+    height: 280px;
+}
+
+.items-list-container article img {
+    height: 100%
+}
+
+/* reviews */
+
+.reviews-background-container {
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../src/reviews/reviews-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    background-position: center -740px;
+    display: flex;
+    justify-content: center;
+}
+
+.black-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-section-container {
+    width: 800px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 1em;
+}
+
+.testimonials {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials h2 {
+    font-size: 1.5em;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 1em;
+}
+
+.reviews-container article {
+    width: calc(700px/2);
+    display: flex;
+    flex-direction: column;
+    border: 1px rgba(255, 255, 255, 20%) solid; 
+    padding: 1em;
+    gap: 1em;
+}
+
+.reviews-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.reviews-avatar {
+    width: 70px;
+    height: 70px;
+    background-image: url(../src/reviews/avatar.jpg);
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+}
+
+.footer-top-container {
+    width: 800px;
+    padding: 3em 1em;
+}
+
+.footer-top-container section {
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+
+.footer-top-container section h3 {
+    font-size: 1.4em;
+}
+
+.footer-top-container section p {
+    font-size: 0.9em;
+}
+
+.footer-top-container section article {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.footer-top-container img {
+    width: 140px;
+}
+
+.footer-bottom-background {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.footer-bottom-background section {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(207, 207, 207);
+}
+
+.footer-bottom-background section a {
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.icon-direction-container {
+    display: flex;
+    gap: 0.34em;
+}
+
+.icon-phone-container {
+    display: flex;
+    gap: 0.2em;
+}
+
+.icon-mail-container {
+    display: flex;
+    gap: 0.4em;
+}
+
+.footer-icon-instagram-container a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    gap: 2px;
+}
+
+.footer-icon-facebook-container a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    gap: 2px;
+}

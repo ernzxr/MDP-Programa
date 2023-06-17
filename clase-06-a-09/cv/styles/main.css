@@ -1,0 +1,357 @@
+* {
+    font-family: Kanit, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+/* header nav */
+
+
+.header-background {
+    height: auto;
+    background-color: rgba(31, 129, 241, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-main-container {
+    width: 90%;
+    max-width: 900px;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.header-main-container h1 {
+    font-size: 1.4em;
+}
+
+.header-main-container nav ul {
+    display: flex;
+}
+
+.header-main-container nav ul li {
+    padding: 0 1em;
+}
+
+/* main header */
+
+.main-header-background {
+    padding: 1em 0 3em 0;
+    background-color: rgba(31, 129, 241, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header-container {
+    width: 90%;
+    max-width: 700px;
+    padding: 3em 2.5em;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-profile-container {
+    width: auto;
+}
+
+.image-profile-container img {
+    width: 170px;
+    padding: 4px;
+    border-radius: 100%;
+    border: 1px gray solid;
+}
+
+.main-header-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.h1-rrss-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.h1-rrss-container a {
+    display: flex;
+    align-items: center;
+    width: 1.5em;
+}
+
+.main-header-rrss-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.profession-container {
+    width: fit-content;
+    padding: 2px 5px;
+    margin-left: 2em;
+    margin-bottom: -10px;
+    background-color: rgba(255, 248, 220, 0.4);
+    border-radius: 4px;
+}
+
+.profession {
+    font-size: 13px;
+    text-align: center;
+}
+
+.main-header-quote-container {
+    padding: 0 1em;
+}
+
+.main-header-quote {
+    margin: 8px 0;
+    padding: 14px;
+    text-indent: 3.6em;
+    background-color: rgba(245, 245, 245, 0.2);
+    border-radius: 4px;
+}
+
+.main-header-quote i {
+    border-left: 1px rgba(128, 128, 128, 0.4) solid;
+    font-size: 0.9em;
+    padding-left: 1em;
+}
+
+/* bio */
+
+.main-bio-container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-bio-section-aside-container {
+    display: flex;
+}
+
+.main-bio-left-container,
+.main-bio-section-aside-container aside  {
+    width: 450px;
+    height: 100%;
+    padding: 1em 4em;
+}
+
+.main-bio-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.main-bio-section-aside-container aside {
+    border-left: 1px gray solid;
+}
+
+.main-bio-about-me-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    height: 100%;
+}
+
+.main-bio-about-me-aside section {
+    padding: 2em 0;
+}
+
+.main-bio-about-me-aside section:not(:last-child) {
+    border-bottom: 1px gray solid;
+}
+
+/* experience */
+
+.experience-background {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-container {
+    width: 90%;
+    max-width: 900px;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    gap: 1em;
+}
+
+.experience-list-background {
+    padding: 2em;
+    background-color: rgba(31, 129, 241, 0.1);
+    border-radius: 6px;
+}
+
+.experiences-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.experience-item-container {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.experience-left {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.experience-img-container {
+    height: 60px;
+}
+
+.experience-img-container img {
+    height: 100%;
+}
+
+.experience-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+/* skills */
+
+.skills-background {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container {
+    width: 90%;
+    max-width: 900px;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    gap: 1em;
+}
+
+/* formation */
+
+.formation-background {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formation-container {
+    width: 90%;
+    max-width: 900px;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    gap: 1em;
+}
+
+/* projects */
+
+.projects-background {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-container {
+    width: 90%;
+    max-width: 900px;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    gap: 1em;
+}
+
+/* tools */
+
+.tools-background {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools-container {
+    width: 90%;
+    max-width: 900px;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    gap: 1em;
+}
+
+.software {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* footer */
+
+.footer-background {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 700px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer-follow-me {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+}
+
+.footer-follow-me p {
+    border-bottom: 1px white solid;
+    padding-bottom: 1em;
+}

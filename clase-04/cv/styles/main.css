@@ -19,7 +19,7 @@ h1 {
 
 .header-main-container {
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@ h1 {
 
 .main-bio-container {
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     padding: 2em 1em;
     display: flex;
@@ -82,7 +82,7 @@ h1 {
 
 .main-bio-section-aside-container section,
 .main-bio-section-aside-container aside  {
-    width: 400px;
+    width: 450px;
     height: 100%;
     padding: 1em;
 }
@@ -96,6 +96,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    height: 100%;
 }
 
 .main-bio-about-me-aside div {
