@@ -77,7 +77,7 @@ button {
 .header-top-width {
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    width: 900px;
 }
 
 /* header nav and call to action*/
@@ -113,14 +113,14 @@ nav a {
 }
 
 .header-nav-and-cta-container {
-    width: 800px;
+    width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .header-nav-container {
-    width: 800px;
+    width: 900px;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -135,6 +135,9 @@ nav a {
 
 .header-nav-container ul li a {
     color: white;
+    margin: 0.8em;
+    font-size: 0.8em;
+    border-bottom: transparent;
     transition: all .2s ease-in-out;
 }
 
@@ -143,13 +146,7 @@ nav a {
 }
 
 .header-nav-container ul li:hover a {
-    font-size: 1em;
-    transition: all .2s ease-in-out;
-}
-
-.header-nav-container ul li a {
-    padding: 0.8em;
-    font-size: 0.8em;
+    border-bottom: 1px white solid;
 }
 
 .header-call-to-action-container {
@@ -182,13 +179,14 @@ nav a {
 }
 
 .services-container-width {
-    width: 800px;
+    width: 900px;
     height: 160px;
     display: flex;
+    justify-content: center;
 }
 
 .services-container article {
-    width: calc(800px/3);
+    width: calc(900px/3);
     height: 100%;
     display: flex;
     padding: 1em;
@@ -211,28 +209,28 @@ nav a {
     line-height: 22px;
 }
 
-.edgar-allan {
-    background-image: url(../src/services/character-1.png);
-    width: 163px;
+.envios-img {
+    background-image: url(../src/services/envios.png);
+    width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -20px -10px;
+    background-size: contain;
+    background-position: center;
 }
 
-.ruby {
-    background-image: url(../src/services/character-2.png);
-    width: 280px;
+.garantia-img {
+    background-image: url(../src/services/garantia.png);
+    width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -14px 0;
+    background-size: contain;
+    background-position: center;
 }
 
-.sexy-ladie {
-    background-image: url(../src/services/character-3.png);
-    width: 180px;
+.consultas-img {
+    background-image: url(../src/services/consultas.png);
+    width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -26px -10px;
+    background-size: contain;
+    background-position: center;
 }
 
 .customer-support {
@@ -247,10 +245,10 @@ nav a {
     background-color: #aa381b;
 }
 
-/* main cannabis genetics */
+/* main wines */
 
-.cannabis-genetics-container {
-    width: 800px;
+.wines-container {
+    width: 900px;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -258,13 +256,13 @@ nav a {
     padding: 1em;
 }
 
-.cannabis-genetics-container article {
+.wines-container article {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.cannabis-genetics-container img {
+.wines-container img {
     border-radius: 100%;
     border: #B7472C 1px solid;
     width: 125px;
@@ -272,7 +270,7 @@ nav a {
     padding: 0.4em;
 }
 
-.kush {
+.tinto {
     width: 125px;
     height: 125px;
     display: flex;
@@ -282,16 +280,17 @@ nav a {
     border: #B7472C 1px solid;
 }
 
-.kush-img {
+.tinto-img {
     width: 115px;
     height: 115px;
-    background-image: url(../src/genetics/genetic.jpeg);
-    background-size: 360px;
-    background-position: -5px -35px;
+    background-image: url(../src/wines/tinto.JPG);
+    background-position: 0px -15px;
+    background-size: 100%;
     border-radius: 100%;
+    background-repeat: no-repeat;
 }
 
-.haze {
+.blanco {
     width: 125px;
     height: 125px;
     display: flex;
@@ -301,16 +300,16 @@ nav a {
     border: #B7472C 1px solid;
 }
 
-.haze-img {
+.blanco-img {
     width: 115px;
     height: 115px;
-    background-image: url(../src/genetics/genetic.jpeg);
-    background-size: 360px;
-    background-position: -120px -35px;
+    background-image: url(../src/wines/blanco.JPG);
+    background-size: 105%;
     border-radius: 100%;
+    background-repeat: no-repeat;
 }
 
-.skunk {
+.rosado {
     width: 125px;
     height: 125px;
     display: flex;
@@ -320,16 +319,15 @@ nav a {
     border: #B7472C 1px solid;
 }
 
-.skunk-img {
+.rosado-img {
     width: 115px;
     height: 115px;
-    background-image: url(../src/genetics/genetic.jpeg);
-    background-size: 360px;
-    background-position: -230px -35px;
+    background-image: url(../src/wines/rosado.JPG);
+    background-size: 100%;
     border-radius: 100%;
 }
 
-.widow {
+.espumoso {
     width: 125px;
     height: 125px;
     display: flex;
@@ -339,16 +337,16 @@ nav a {
     border: #B7472C 1px solid;
 }
 
-.widow-img {
+.espumoso-img {
     width: 115px;
     height: 115px;
-    background-image: url(../src/genetics/genetic.jpeg);
-    background-size: 360px;
-    background-position: -5px -150px;
+    background-image: url(../src/wines/espumoso.JPG);
+    background-size: 125%;
     border-radius: 100%;
+    background-repeat: no-repeat;
 }
 
-.cripy {
+.especiales {
     width: 125px;
     height: 125px;
     display: flex;
@@ -358,16 +356,16 @@ nav a {
     border: #B7472C 1px solid;
 }
 
-.cripy-img {
+.especiales-img {
     width: 115px;
     height: 115px;
-    background-image: url(../src/genetics/genetic.jpeg);
-    background-size: 360px;
-    background-position: -120px -148px;
+    background-image: url(../src/wines/especiales.JPG);
+    background-size: 100%;
     border-radius: 100%;
+    background-repeat: no-repeat;
 }
 
-.cannabis-genetics-container h3 {
+.wines-container h3 {
     text-align: center;
     padding: 0.4em;
 }
@@ -375,7 +373,7 @@ nav a {
 /* shop list */
 
 .shop-list-container {
-    width: 800px;
+    width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,12 +399,13 @@ nav a {
 }
 
 .items-list-container {
+    width: 100%;
     display: flex;
     gap: 1em;
 }
 
 .items-list-container article {
-    width: calc(800px/4);
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -414,21 +413,11 @@ nav a {
     padding: 0.5em;
 }
 
-.item-list-image-container {
-    width: 184px;
-    height: 280px;
-    box-shadow: black 1px 1px 4px -1px;
-}
-
-.items-list-container img {
-    object-fit: contain;
-}
-
-.lighter-fix {
+.item-1 {
     transform: scale(0.7);
 }
 
-.blunt-fix {
+.item-4 {
     transform: scale(0.95);
 }
 
@@ -446,22 +435,25 @@ nav a {
     color: #b13c1e;
 }
 
-.items-list-container article div {
+.item-list-image-container {
+    width: 184px;
     height: 280px;
+    box-shadow: black 1px 1px 4px -1px;
 }
 
 .items-list-container article img {
-    height: 100%
+    height: 100%;
+    object-fit: contain;
 }
 
 /* reviews */
 
 .reviews-background-container {
-    height: 350px;
+    height: 400px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../src/reviews/reviews-background.jpg);
     background-repeat: no-repeat;
     background-size: 1920px;
-    background-position: center -740px;
+    background-position: center -550px;
     display: flex;
     justify-content: center;
 }
@@ -475,7 +467,7 @@ nav a {
 }
 
 .reviews-section-container {
-    width: 800px;
+    width: 900px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -496,16 +488,18 @@ nav a {
 }
 
 .reviews-container {
+    width: 800px;
     display: flex;
-    gap: 1em;
+    justify-content: center;
+    gap: 2em;
 }
 
 .reviews-container article {
     width: calc(700px/2);
+    padding: 1em;
     display: flex;
     flex-direction: column;
     border: 1px rgba(255, 255, 255, 20%) solid; 
-    padding: 1em;
     gap: 1em;
 }
 
@@ -535,14 +529,14 @@ footer {
 }
 
 .footer-top-container {
-    width: 800px;
+    width: 900px;
     padding: 3em 1em;
 }
 
 .footer-top-container section {
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 4em;
 }
 
@@ -575,7 +569,7 @@ footer {
 }
 
 .footer-bottom-background section {
-    width: 800px;
+    width: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
